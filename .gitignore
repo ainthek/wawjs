@@ -1,0 +1,97 @@
+node_modules
+
+
+
+!.gitignore
+
+# General Backup Files
+*.BAK
+*.bak
+
+# General Log files
+*.log
+
+# OSX and Windows Thumbnail Databases
+[Tt]humbs.db
+.DS_Store
+
+# Temp Files
+*-MarkdownPadPreview.html
+_grasp.tmp
+
+# Office Temp Files
+~$*
+
+# MS Office Temp files (exceptional cases)
+~*.tmp
+
+# OSX Numbers/Libre office Temp Files
+.~lock*
+
+# vim Temp Files
+*~
+
+# Eclipse (STS)
+.metadata
+RemoteSystemsTempFiles
+Servers
+.recommenders
+
+# Sass - no longer used, remove?
+.sass-cache/
+*.scssc
+
+
+# Source Control Files (usefull after migration, or coexistence)
+*/.git/*
+*.scc
+.svn
+.repository
+*.vspscc  
+*.vssscc
+
+
+# Java
+*.class
+*/bin/*
+
+# Maven
+target
+
+
+# Dojo build
+*.uncompressed.js
+ScreenBuild*.js
+commonBuild*.js
+*.map
+*.min.css
+
+
+
+# Compilers and Tools
+.sonar
+*.Z
+*.elc
+*.ln
+*.o
+*.obj
+*.olb
+*.old
+*.orig
+*.pyc
+*.pyo
+*.rej
+
+# KDE Dolphin file manager
+.directory
+
+# vim
+*.swp
+
+#Unknown
+#*rebel.xml
+#*$
+#,*
+#.#*
+
+
