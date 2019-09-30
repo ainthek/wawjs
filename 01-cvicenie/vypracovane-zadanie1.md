@@ -36,4 +36,4 @@ Projekt využíva jQuery.
 ![hyper ukazka](hyper.gif)
 
 ### Charakteristika
-Terminál vytvorený pomocou webových technológií. Je to jednoduchá appka, ktorej primárnym cieľom je rýchlosť. Na rozdiel od "klasických" terminálov, je tento jednoducho upravovateľný (témz, pluginy). Je to desktopová aplikácia vytvorená použitím Electronu, UI je vytvorené použitím React.
+Terminál vytvorený pomocou webových technológií. Je to jednoduchá desktopová appka, ktorej primárnym cieľom je rýchlosť. Na rozdiel od "klasických" terminálov, je tento jednoducho upravovateľný (témy, pluginy). Je to desktopová aplikácia vytvorená použitím Electronu, UI je vytvorené použitím React. V projekte tiez pouzivaju yarn na dependency manazment.
