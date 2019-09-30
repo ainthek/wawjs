@@ -15,8 +15,8 @@ describe("Exploratory tests - string", function() {
     assert.strictEqual(c, "cats and dogs");
   });
   it("Pad all strings to size of longest", function() {
-    const strings = ["a", "bbc", "cc"];
-    let result = [];
+    const strings = ["a", "bb", "ccc"];
+    let result;
     // ....
     // ....
     // ....
