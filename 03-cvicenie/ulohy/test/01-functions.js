@@ -1,4 +1,4 @@
-/*global describe:true,it:true,	after:true,before:true,afterEach:true,beforeEach:true */
+/*global describe:true,it:true, after:true,before:true,afterEach:true,beforeEach:true */
 const assert = require("assert");
 
 describe("03-functions", function() {
@@ -201,7 +201,7 @@ describe("03-functions", function() {
     let format1 = formater("'", "'");
     assert(format1("text") === "'text'");
 
-    let format2 = formater("xxx", "xxx");
+    let format2 = formater("xxx", "yyy");
     assert(format2("text") === "xxxtextyyy");
 
   });
@@ -213,10 +213,10 @@ describe("03-functions", function() {
     let format1 = formater("'", "'");
     assert(format1("text") === "'text'");
 
-    let format2 = formater("xxx", "xxx");
+    let format2 = formater("xxx", "yyy");
     assert(format2("text") === "xxxtextyyy");
 
     format2.sufix = "zzz";
-    assert(format2("text") === "xxxTEXTzzz");
+    assert(format2("TEXT") === "xxxTEXTzzz");
   });
 });
