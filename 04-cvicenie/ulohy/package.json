@@ -1,0 +1,17 @@
+{
+  "name": "ulohy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --color test/creating-objects.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^6.2.1"
+  }
+}
