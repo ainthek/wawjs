@@ -12,6 +12,7 @@ describe("FP - array functions", function() {
     //debug(JSON.stringify(students, null, 2));
     debug(students);
     assert(Array.isArray(students));
+    console.log(JSON.stringify(students))
   });
 
   it("02-students without git repo", () => {
@@ -77,7 +78,7 @@ describe("FP - array functions", function() {
     let studentsWithPoints = students
       .map(fixPoints)
 
-    
+
     assert.deepStrictEqual(
       studentsWithPoints,
       require("./data/restructure-points.json")
@@ -85,7 +86,7 @@ describe("FP - array functions", function() {
 
   });
 
-  
+
   function totalPoints(student) {
     // TODO: implementujte
   }
@@ -111,7 +112,7 @@ describe("FP - array functions", function() {
     let sumOfAll = students
       .map(fixPoints)
       .map(totalPoints)
-      //.????()
+    //.????()
 
     debug(sumOfAll);
     assert(sumOfAll === 924);
@@ -122,8 +123,7 @@ describe("FP - array functions", function() {
     let uniqueProjects = students
       .map(fixProjects)
       .reduce((uniqueProjects, student, i, students) => {
-        student.projects.forEach(uniqueProjects.add, uniqueProjects);
-        return i !== students.length - 1 ? uniqueProjects : [...uniqueProjects];
+        // TODO: pozri prednasky 
       }, new Set())
 
     assert.deepStrictEqual(
@@ -136,7 +136,7 @@ describe("FP - array functions", function() {
   it("09-group by project", () => {
     // ku kazdemu projektu najst zoznam studentov
     // vysledok ma vyzerat tak ako v group-by-project.json
-    
+
     let groupedByProject = students
       .map(fixProjects)
       .reduce((uniqueProjects, student) => {
@@ -145,7 +145,7 @@ describe("FP - array functions", function() {
       }, new Map())
     // convert map entries to array
     groupedByProject = [...groupedByProject];
-    
+
     //debug(JSON.stringify(groupedByProject, null, 2));
     assert.deepStrictEqual(
       groupedByProject,
@@ -160,14 +160,24 @@ describe("FP - array functions", function() {
     // aby vysledok vysiel podla duplicate-projects.json
     let duplicateProjects = students
       .map(fixProjects)
-      //. TODO:
-      //.
-      //.
-      //
+    //. TODO:
+    //.
+    //.
+    //
     debug(JSON.stringify(duplicateProjects, null, 2));
     assert.deepStrictEqual(
       duplicateProjects,
       require("./data/duplicate-projects.json")
     );
   });
+
+  describe.skip("bonus", () => {
+    it("10b - top 3 projects", () => {
+
+
+    });
+    it("11 -always same team", () => {
+
+    });
+  })
 });
