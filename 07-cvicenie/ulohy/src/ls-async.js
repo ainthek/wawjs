@@ -6,16 +6,16 @@ module.exports = lsRescursive
 function lsRescursive(dirName) {
 
   return ls(dirName)
-    .then(dirsOnly)
-    .then(dirs => dirs.map(({ name }) => name))
-    .then(dirs => dirs.map(name => path.resolve(dirName, name)))
-    .then(dirs => dirs.map(ls)) // [] of Promises of []s
-    .then(files => Promise.all(files)) // Promise of [] of []s
-    .then(files => [].concat(...files)) // [[],[],...]-> [.,.,.]
-    .then(filesOnly)
-    .then((files) =>
-      files.map(({ name }) => name)
-    )
+    // .then(dirsOnly)
+    // .then(dirs => dirs.map(({ name }) => name))
+    // .then(dirs => dirs.map(name => path.resolve(dirName, name)))
+    // .then(dirs => dirs.map(ls)) // [] of Promises of []s
+    // .then(files => Promise.all(files)) // Promise of [] of []s
+    // .then(files => [].concat(...files)) // [[],[],...]-> [.,.,.]
+    // .then(filesOnly)
+    // .then((files) =>
+    //   files.map(({ name }) => name)
+    // )
 }
 
 function ls(dirName) {
