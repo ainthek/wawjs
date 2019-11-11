@@ -1,0 +1,18 @@
+{
+  "name": "ulohy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --color test && SELF_TEST=1 node -r ./src/pipe.js -p '`done`'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "debug": "^4.1.1",
+    "mocha": "^6.2.2",
+    "xlsx": "^0.15.1"
+  }
+}
