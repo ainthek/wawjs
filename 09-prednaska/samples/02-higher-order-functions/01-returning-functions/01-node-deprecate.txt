@@ -1,0 +1,67 @@
+// priklad na funkciu vracajucu funkciu
+// za ucelom pridanej funkcionality v novej funkcii
+// priklad je z nodejs projektu
+
+// file: lib/util.js
+module.exports = exports = {
+  //....
+  isFunction,
+  isPrimitive,
+  log,
+  promisify,
+  TextDecoder,
+  TextEncoder,
+  types,
+
+  // Deprecated Old Stuff
+  debug: deprecate(debug,
+                   'util.debug is deprecated. Use console.error instead.',
+                   'DEP0028'),
+  error: deprecate(error,
+                   'util.error is deprecated. Use console.error instead.',
+                   'DEP0029'),
+  //....
+};
+
+// Mark that a method should not be used.
+// Returns a modified function which warns once by default.
+// If --no-deprecation is set, then it is a no-op.
+function deprecate(fn, msg, code) {
+  if (process.noDeprecation === true) {
+    return fn;
+  }
+
+  if (code !== undefined && typeof code !== 'string')
+    throw new ERR_INVALID_ARG_TYPE('code', 'string', code);
+
+  let warned = false;
+  function deprecated(...args) {
+    if (!warned) {
+      warned = true;
+      if (code !== undefined) {
+        if (!codesWarned[code]) {
+          process.emitWarning(msg, 'DeprecationWarning', code, deprecated);
+          codesWarned[code] = true;
+        }
+      } else {
+        process.emitWarning(msg, 'DeprecationWarning', deprecated);
+      }
+    }
+    if (new.target) {
+      return Reflect.construct(fn, args, new.target);
+    }
+    return fn.apply(this, args);
+  }
+
+  // The wrapper will keep the same prototype as fn to maintain prototype chain
+  Object.setPrototypeOf(deprecated, fn);
+  if (fn.prototype) {
+    // Setting this (rather than using Object.setPrototype, as above) ensures
+    // that calling the unwrapped constructor gives an instanceof the wrapped
+    // constructor.
+    deprecated.prototype = fn.prototype;
+  }
+
+  return deprecated;
+}
+
