@@ -1,0 +1,26 @@
+{
+  "name": "samples",
+  "version": "1.0.0",
+  "main": "write-large-file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "byline": "^5.0.0",
+    "debug": "^4.1.1",
+    "iconv": "^2.3.1",
+    "json-decycle": "^1.0.0",
+    "jsondiffpatch": "^0.3.10",
+    "leaked-handles": "^5.2.0",
+    "merge-stream": "^2.0.0",
+    "stack-trace": "0.0.10"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "description": ""
+}

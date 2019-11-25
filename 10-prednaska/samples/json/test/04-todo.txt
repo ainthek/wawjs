@@ -1,0 +1,34 @@
+internal/modules/cjs/loader.js:573
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/marcus/workspaces/FIIT/2018-javascript/prednasky/07-streams/samples/json/04-todo.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:571:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:497:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:719:10)
+    at startup (internal/bootstrap/node.js:228:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:575:3)
+Command exited with non-zero status 1
+	Command being timed: "node ../04-todo.js"
+	User time (seconds): 0.07
+	System time (seconds): 0.01
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.09
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 20548
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 5337
+	Voluntary context switches: 0
+	Involuntary context switches: 64
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

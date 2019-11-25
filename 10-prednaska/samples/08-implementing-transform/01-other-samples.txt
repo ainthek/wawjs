@@ -1,0 +1,31 @@
+# ./samples/01-read-lines/pipeImpl.js
+
+	Simple line prefixing stream
+
+# ../10-cvicenie/uloha02/src/bom/
+
+	stream filter adding and removing BOM (byte order mark) 
+	from UTF encoded files
+
+	full implementation
+
+# ./samples/02-node-js-streams/toJson.js
+
+	naivna konverzia string-line -> json-line
+
+
+# ./samples/04-temp-sensor/TemperatureSensor2.js
+	
+	DeltaDetector, OverHeatDetector
+	
+	pouzitie Transform ako Filtra
+	
+# ./samples/lib/IconvTransform.js
+	
+	Citanie windows 1250 fajlov v node.js
+	Pouzitie externej kniznice a obalenie do streamu
+
+	sample v part#2 encoding
+
+	
+

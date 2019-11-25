@@ -1,0 +1,25 @@
+@startuml
+hide footbox
+participant YourCode order 10
+participant Readable order 20
+participant Readable.Buffer order 30
+participant YourStream order 40
+
+
+YourCode 	-> Readable: on("readable",callback)
+
+Readable 	-> Readable: read()
+activate Readable
+Readable    -> YourStream: _read()
+activate YourStream
+YourStream  -> Readable.Buffer: push()
+YourStream  -> Readable.Buffer: push()
+YourStream  -> Readable.Buffer: ...
+deactivate YourStream
+Readable    -> YourCode: "readable" callback
+activate YourCode
+YourCode 	-> Readable: read()
+
+
+@enduml
+
