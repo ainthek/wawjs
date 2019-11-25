@@ -1,0 +1,15 @@
+{
+  "name": "uloha02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/bom/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
