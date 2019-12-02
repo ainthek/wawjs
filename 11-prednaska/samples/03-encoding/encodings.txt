@@ -1,0 +1,50 @@
+
+
+// BUFFERS
+
+// null
+<Buffer c5 be 61 62 61 20 c5>
+<Buffer a5 61 76 61 20 76 c3>
+<Buffer b4 6c>
+
+// utf8
+<Buffer c5 be 61 62 61 20>
+<Buffer c5 a5 61 76 61 20 76>
+<Buffer c3 b4 6c>
+
+// ascii
+<Buffer 45 3e 61 62 61 20 45>
+<Buffer 25 61 76 61 20 76 43>
+<Buffer 34 6c>
+
+// hex
+<Buffer 63 35 62 65 36 31 36 32 36 31 32 30 63 35>
+<Buffer 61 35 36 31 37 36 36 31 32 30 37 36 63 33>
+<Buffer 62 34 36 63>
+
+
+
+// STRINGS
+
+//null + buff+""
+žaba �
+�ava v�
+�l
+
+//utf8
+žaba
+ťava v
+ôl
+
+// ascii
+E>aba E
+%ava vC
+4l
+
+
+
+// hex
+c5be61626120c5
+a56176612076c3
+b46c
+
